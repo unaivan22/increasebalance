@@ -11,6 +11,7 @@
 		A31468672ADE1DA200CE465F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31468662ADE1DA200CE465F /* ContentView.swift */; };
 		A31468692ADE1DA800CE465F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31468682ADE1DA800CE465F /* Assets.xcassets */; };
 		A314686C2ADE1DA800CE465F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A314686B2ADE1DA800CE465F /* Preview Assets.xcassets */; };
+		A31468742ADE295300CE465F /* AnimatedNumber in Frameworks */ = {isa = PBXBuildFile; productRef = A31468732ADE295300CE465F /* AnimatedNumber */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31468742ADE295300CE465F /* AnimatedNumber in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = magicsaldo;
+			packageProductDependencies = (
+				A31468732ADE295300CE465F /* AnimatedNumber */,
+			);
 			productName = magicsaldo;
 			productReference = A31468612ADE1DA200CE465F /* magicsaldo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = A31468582ADE1DA200CE465F;
+			packageReferences = (
+				A31468722ADE295300CE465F /* XCRemoteSwiftPackageReference "AnimatedNumber" */,
+			);
 			productRefGroup = A31468622ADE1DA200CE465F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A31468722ADE295300CE465F /* XCRemoteSwiftPackageReference "AnimatedNumber" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jeffgrann/AnimatedNumber";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A31468732ADE295300CE465F /* AnimatedNumber */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A31468722ADE295300CE465F /* XCRemoteSwiftPackageReference "AnimatedNumber" */;
+			productName = AnimatedNumber;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A31468592ADE1DA200CE465F /* Project object */;
 }
